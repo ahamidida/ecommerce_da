@@ -31,7 +31,12 @@ SECRET_KEY = 'django-insecure-=b_47xh5y-wi#iifl#d6irk!qs(r=_rk@obp_3jy!a9!)s+lx(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost', 
+    '127.0.0.1',
+    'django-rfm-project.herokuapp.com', 
+    f'{os.environ.get("DYNO")}.django-rfm-project.herokuapp.com'
+]
 
 
 # Application definition
